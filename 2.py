@@ -1,11 +1,11 @@
 def print_personal_info(name, surname, year_of_birth, city_of_residence, email, tel_number):
-    personal_info = f'{surname} {name},year_of_birth ',' {city_of_residence} ',' {email} ',' {tel_number}'
+    personal_info = f'{surname} {name}, {year_of_birth}, {city_of_residence}, {email}, {tel_number}'
     return personal_info
     '''
     Get personal information, write it down in one line
     :param name: str
     :param surname: str
-    :param year_of_birth: str
+    :param year_of_birth: int
     :param city_of_residence: str
     :param email: str
     :param tel_number: str
