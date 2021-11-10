@@ -17,3 +17,4 @@ while not finished:
     finished = stopper in nums_str_user
     print(f"Sum = {s}")
 
+

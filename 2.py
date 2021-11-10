@@ -13,3 +13,4 @@ def print_personal_info(name, surname, year_of_birth, city_of_residence, email, 
     '''
 
 print(print_personal_info(name = 'Анна', surname = 'Аверина', year_of_birth = 1975, city_of_residence = 'Москва', email = 'oio@bk.ru', tel_number = '93874'))
+
