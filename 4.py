@@ -1,11 +1,11 @@
-number = int(input("Введите любое целое положительное число: "))
-max_num = 0
-while number > 0:
-    if number % 10 > max_num:
-        max_num = number % 10
-        if max_num == 9:
-            break
-    number //= 10
+def my_func(x, y):
+    return x ** y
+    '''
+    Get x raised to the power of y
+    :param x: int > 0
+    :param y: int < 0
+    :return: my_func: float
+    '''
 
-print(f"Максимальная цифра числа: {max_num}")
+print(my_func(9, -2))
 

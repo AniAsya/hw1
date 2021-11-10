@@ -1,8 +1,14 @@
-distance = float(input("Введите результат за первый день: "))
-days = 1
-goal = float(input("Введите целевое значение: "))
-while distance < goal:
-    distance *= 1.1
-    days += 1
+def int_func(txt):
+    Text = text[0].upper() + text[1:].lower()
+    return Text
+    '''
+    Get the word capitalised
+    :param text: str
+    :return: int_func: str
+    '''
+text = input("Введите любое слово латинскими буквами: ")
+print(int_func('txt'))
 
-print(f"Спортсмену потребуется {days} дней")
+string = input("Введите слова через пробел: ")
+for text in string.split(' '):
+    print(f'{int_func(text)}', end=' ')

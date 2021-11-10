@@ -1,20 +1,20 @@
-proceeds = int(input("Введите сумму выручки: "))
-costs = int(input("Введите сумму издержек: "))
-profit = proceeds - costs
+def sum_nums(nums_str, stop):
+    nums_list = nums_str.split(' ')
+    sum_list = 0
+    for i in nums_list:
+        if i == stop:
+            break
+        sum_list += int(i)
 
-if profit < 0:
-        print("Ваша фирма работает в убыток")
-elif profit == 0:
-        print("Ваша фирма компенсирует затраты, но не имеет прибыли")
-else:
-        print("Ваша фирма работает с прибылью")
+    return sum_list
 
-if profit > 0:
-    profitability = profit / proceeds
-    print(f"Рентабельность: {profitability}")
-    amount = int(input("Введите количество сотрудников: "))
-    profit_am = profit / amount
-    print(f"Прибыль Вашей фирмы в расчете на одного сотрудника: {profit_am}")
-
+stopper = '!'
+finished = False
+s = 0
+while not finished:
+    nums_str_user = input("Введите числа через пробел: ")
+    s += sum_nums(nums_str_user, stopper)
+    finished = stopper in nums_str_user
+    print(f"Sum = {s}")
 
 
